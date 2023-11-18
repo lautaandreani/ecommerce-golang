@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
-	"home/lautaro/dev/ecommerce-golang/variables"
+	"home/lautaro/dev/ecommerce-golang/exercises"
 )
 
 func main() {
-	status, text := variables.ParseToText(23)
-	fmt.Println("🚀 ~ file: main.go:10 ~ funcmain ~ status:", status)
-	fmt.Println("🚀 ~ file: main.go:10 ~ funcmain ~ text:", text)
-	fmt.Println("Hello world")
+	num, str := exercises.IsGreatherThan("10")
+	fmt.Printf("%d, %s \n", num, str)
 }
